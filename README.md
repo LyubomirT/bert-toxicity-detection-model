@@ -58,18 +58,11 @@ To perform inference:
 
 1. **Model Loading**: The notebook includes code to load the pre-trained model weights.
 2. **Prediction Function**: Use the `predict_toxicity` function to evaluate the toxicity of input text.
+3. **Output**: The function returns a dictionary with the toxicity probabilities for each category.
 
-### Example Usage
+---
 
-Run the following code in the notebook to test the model with your own text:
-
-```python
-text = input("Enter text: ")
-result = predict_toxicity(text)
-print(f"Input text: {text}")
-for label, values in result.items():
-    print(f"{label}: Probability = {values['probability']:.4f}, Prediction = {values['prediction']}")
-```
+Basically, this means that you can download the weights and run all cells + the last one to test the model on your own text. Also, you can train the model on your own dataset by following the instructions in the notebook.
 
 ## Contributing
 
